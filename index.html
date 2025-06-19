@@ -1,1 +1,96 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <section class="page1">
+        <nav>
+        <ul>
+            <li> <a href="#">4.8 rating on Capterra</a></li>
+            <li class="hide"> <a href="#">350+ reviews on XERO</a></li>
+            <li class="hide"> <a href="#">550+ reviews quickbooks</a></li>
+            <li class="hide"> <a href="#">Policy</a></li>
+        </ul>
+    </nav>
+    <div class="text">
+        <div class="text1">
+            <a href="">Create</a>
+        <a href="">reports,</a>
+        <a href="">forecasts,</a>
+        </div>
+        <div class="text1">
+            <a href="">dashboards &</a>
+        <a href="">consolidations</a>
+        </div>
+    </div>
+    </section>
+    <section class="page2">
+        <div class="part1">
+            <img src="image/cd6adb21-253f-4eda-b643-3affcd39135b.jpg" alt="" srcset="" height="100%" width="100%">
+        </div>
+        <div class="part2">
+            <img src="image/e20d52ea-1704-4d99-a0b3-294d8bccc863.jpg" alt="" srcset="" height="100%" width="100%">
+        </div>
+    </section>
+    <section class="page3">
+        <div class="graph">
+        <div class="Chart">
+            <div class="filters">
+        <div>
+            <label>Type</label>
+            <button class="filter-btn active" onclick="filterData('all')">All</button>
+            <button class="filter-btn" onclick="filterData('refurbishment')">Refurbishment</button>
+            <button class="filter-btn" onclick="filterData('newbuild')">New Build</button>
+        </div>
+        <div>
+            <label>Status</label>
+            <button class="status-btn active" onclick="toggleStatus('complete')">Complete</button>
+            <button class="status-btn" onclick="toggleStatus('estimate')">Estimate</button>
+        </div>
+        </div>
+            <div class="text2">
+            <h1>Embodied <br> <span>Carbon</span> 
+                <br> Emissions</h1>
+            <p>Intensity measured by kgCO₂e/m²</p>
+        </div>
+        </div>
+
+       <div class="main-chart">
+         <canvas id="carbonChart"></canvas>
+
+        <p class="legend"> 
+        <span class="line gray"></span> 500 kgCO₂e/m² - Target 2030
+        <span class="line dark"></span> 600 kgCO₂e/m² - Target 2025
+        </p>
+       </div>
+    </div>
+
+    </section>
+    <section class="page4">
+        <div class="main-box">
+            <div class="boxes1">
+                <div class="box">CURSOR</div>
+                <div class="box">Brex</div>
+                <div class="box">remote</div>
+                <div class="box">ARC</div>
+            </div>
+            <div class="boxes2">
+                <div class="box">runway</div>
+                <div class="box">descript</div>
+                <div class="box">ChatGPT</div>
+                <div class="box">Raycast</div>
+            </div>
+        </div>
+        <div class="main-box1"></div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
